@@ -177,7 +177,7 @@ class Game extends React.Component {
 
 function calculateWinner(columns) {
     for (let i = 0; i < columns.length; i++) {
-        if (i % 6 < 4) {
+        if (i % 6 < 3) {
             if (columns[i] && columns[i] === columns[i + 1] && columns[i] === columns[i + 2]
                 && columns[i] === columns[i + 3]) { return columns[i] }
             if (i / 6 < 4) {
